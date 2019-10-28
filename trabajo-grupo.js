@@ -1,4 +1,4 @@
-const nombre = prompt(`Bienvenida a la tienda "Las tangas de Leelee". Decinos tu nombre!`)
+const nombre = prompt(`Bienvenida a la tienda "Las tangas de Leelee". Decinos tu nombre!`);
 
 const productos = alert(`Hola ${nombre}. Estos son nuestros productos en oferta:
 
@@ -10,21 +10,20 @@ Colaless`)
 
 //let producto2 = "colaless"
 
-const producto1 = prompt(`Querés comprar tangas?`)
+const producto1 = prompt(`Querés comprar tangas?`);
 
-let cantidadProducto1 
-cantidadProducto1 = "si" && prompt(`Cuantas unidades queres?`)
 
-const producto2 = prompt(`Querés comprar colaless?`)
+const cantidadProducto1 = producto1 == "si" && prompt(`Cuantas unidades queres?`) || 0;
 
-let cantidadProducto2 
-cantidadProducto2 = "si" && prompt(`Cuantas unidades queres?`)
+const producto2 = prompt (`queres comprar colaless`)
 
-let precio1 = 50
+const cantidadProducto2 = producto2 == "si" && prompt(`Cuantas unidades queres?`) || 0;
 
-let precio2 = 60
+let precio1 = 50;
 
-let total = (cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)
+let precio2 = 60;
+
+let total = (cantidadProducto1 * precio1) + (cantidadProducto2 * precio2);
 
 const resumenCompra = alert(`Resumen de tu compra
 Compraste:
@@ -35,11 +34,11 @@ colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 
 total = ${total}
 
-`)
+`);
 
-const medioPago = prompt("Querés abonar con tarjeta de crédito?")
+const medioPago = prompt("Querés abonar con tarjeta de crédito?");
 
-let pagoTarjeta = medioPago == "si" && prompt(`En cuantas cuotas querés abonar?`)
+let pagoTarjeta = medioPago == "si" && prompt(`En cuantas cuotas querés abonar?`);
 
 let mensajeTarjeta = pagoTarjeta && `cantidad de cuotas = ${pagoTarjeta} 
 
@@ -55,17 +54,17 @@ colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 total = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
 
 ${mensajeTarjeta ||  "0"}
-`)
+`);
 
-const codigoDescuento = prompt("Tenés código de descuento?")
+const codigoDescuento = prompt("Tenés código de descuento?");
 
 const codigoIngresado = codigoDescuento == "si" && prompt("ingresá el código") || alert("no tenes código")
 
-console.log(codigoDescuento)
+console.log(codigoDescuento);
 
 let codigo = "ADALOVELACE"
 
-codigoIngresado == codigo && alert("Código aceptado") 
+codigoIngresado == codigo && alert("Código aceptado"); 
 
 total = codigoIngresado == codigo && alert(`Resumen de tu compra
 Compraste:
@@ -91,16 +90,8 @@ subtotal = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
 
 ${mensajeTarjeta ||  "cuotas = 0"}
 
-total = ${total}`)
+total = ${total}`);
 
-alert(`Gracias ${nombre} por tu compra`)
-
-
-
-
-
-
-
-
+alert(`Gracias ${nombre} por tu compra`);
 
 
