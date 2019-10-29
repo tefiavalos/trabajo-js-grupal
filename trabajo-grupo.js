@@ -1,4 +1,4 @@
-const nombre = prompt(`Bienvenida a la tienda "💝 Las tangas de Leele 💝". Decinos tu nombre!`);
+const nombre = prompt(`Bienvenida a la tienda "💝 Las tangas de Leele 💝". Decinos tu nombre!`) || ""
 
 const productos = alert(`Hola ${nombre}. Estos son nuestros productos en oferta:
 
@@ -61,7 +61,11 @@ let codigo = "ADALOVELACE"
 
 codigoIngresado == codigo && alert("Código aceptado"); 
 
-total = codigoIngresado == codigo && alert(`Resumen de tu compra
+codigoIngresado == codigo && (mensajeTarjeta = pagoTarjeta && `cantidad de cuotas = ${pagoTarjeta} 
+
+precio x cuotas = ${(total -20) / pagoTarjeta}`)  
+
+codigoIngresado == codigo && alert(`Resumen de tu compra
 Compraste:
 
 👙 Tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
