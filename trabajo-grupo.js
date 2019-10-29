@@ -1,21 +1,16 @@
-const nombre = prompt(`Bienvenida a la tienda "Las tangas de Leelee". Decinos tu nombre!`);
+const nombre = prompt(`Bienvenida a la tienda "💝 Las tangas de Leele 💝". Decinos tu nombre!`);
 
 const productos = alert(`Hola ${nombre}. Estos son nuestros productos en oferta:
 
-Tangas
+👙 Tangas
 
-Colaless`)
-
-//let producto1 = "tangas"
-
-//let producto2 = "colaless"
+🔥 Colaless`)
 
 const producto1 = prompt(`Querés comprar tangas?`);
 
-
 const cantidadProducto1 = producto1 == "si" && prompt(`Cuantas unidades queres?`) || 0;
 
-const producto2 = prompt (`queres comprar colaless`)
+const producto2 = prompt (`Queres comprar colaless?`)
 
 const cantidadProducto2 = producto2 == "si" && prompt(`Cuantas unidades queres?`) || 0;
 
@@ -28,11 +23,11 @@ let total = (cantidadProducto1 * precio1) + (cantidadProducto2 * precio2);
 const resumenCompra = alert(`Resumen de tu compra
 Compraste:
 
-tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
+👙 Tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
 
-colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
+🔥 Colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 
-total = ${total}
+💵 Total = ${total}
 
 `);
 
@@ -47,18 +42,18 @@ precio x cuotas = ${total / pagoTarjeta}`
 alert(`Resumen de tu compra
 Compraste:
 
-tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
+👙 Tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
 
-colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
+🔥 Colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 
-total = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
+💵 Total = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
 
 ${mensajeTarjeta ||  "0"}
 `);
 
 const codigoDescuento = prompt("Tenés código de descuento?");
 
-const codigoIngresado = codigoDescuento == "si" && prompt("ingresá el código") || alert("no tenes código")
+const codigoIngresado = codigoDescuento == "si" && prompt("Ingresá el código aqui") || alert("No tenes código")
 
 console.log(codigoDescuento);
 
@@ -69,29 +64,31 @@ codigoIngresado == codigo && alert("Código aceptado");
 total = codigoIngresado == codigo && alert(`Resumen de tu compra
 Compraste:
 
-tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
+👙 Tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
+ 
+🔥 Colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 
-colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
+Subtotal = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
 
-subtotal = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
+${mensajeTarjeta ||  "Cuotas = 0"}
 
-${mensajeTarjeta ||  "cuotas = 0"}
+Descuento = $20
 
-descuento = $20
+💵 Total = ${total-20}`)
 
-total = ${total-20}`)  || alert(`Resumen de tu compra
+codigoIngresado != codigo && alert(`Resumen de tu compra
 Compraste:
 
-tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
+👙 Tangas x ${cantidadProducto1} = $ ${cantidadProducto1 * precio1}
 
-colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
+🔥 Colaless x ${cantidadProducto2} = $ ${cantidadProducto2 * precio2}
 
-subtotal = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
+Subtotal = ${(cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}
 
-${mensajeTarjeta ||  "cuotas = 0"}
+${mensajeTarjeta ||  "Cuotas = 0"}
 
-total = ${total}`);
+💵 Total = ${total = (cantidadProducto1 * precio1) + (cantidadProducto2 * precio2)}`);
 
-alert(`Gracias ${nombre} por tu compra`);
+alert(`Gracias ${nombre} por tu compra 🛍️`);
 
 
